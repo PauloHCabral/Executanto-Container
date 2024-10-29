@@ -1,0 +1,41 @@
+Executanto o Primeiro Container Docker
+
+Para testar se o container Docker está funcionando corretamente, execute o cantainer hello-word:
+# sudo docker run hello-word
+
+Explicação: 
+docker run: Baixa a imagem hello-word do Docker Hub(se não estiver disponível localmente)e a executa.
+
+Docker Hub: Um repositório público onde os cantainers são armazenados.
+
+
+Testanto Comandos Básicos do Docker:
+Listar containers em execução:
+# sudo docker ps
+
+Mostra todos os containers em execução.
+
+Lista todos os containers(incluindo parados):
+# sudo docker ps  -a
+
+Exibe todos os containers que foram criados, estejam ativos ou inativos.
+Listar todas as imagens Docker:
+# sudo docker images
+
+Lista todas as imagens Docker baixadas no sistema:
+
+Removendo uma imagem Docker:
+# sudo docker rmi <image.id>
+
+Removendo uma imagem específica pelo image_id.
+
+Removendo um container Docker:
+# sudo docker rm <container_id>
+
+Remove um container espedífico pelo container_id.
+
+
+Ajuste de Permissões(opcional)
+Para evitar usar sudo com o Docker, adicione seu usuário ao grupo docker:
+# sudo usermod  -aG docker  $USER
+Após isso, faça logout e loginnovamente. Esse comando permite que você use o Docker sem sudo.
